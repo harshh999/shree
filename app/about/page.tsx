@@ -6,7 +6,6 @@ import { SectionHeading } from "@/components/common/SectionHeading";
 import { Reveal } from "@/components/common/Reveal";
 import { ImageReveal } from "@/components/common/ImageReveal";
 import { businessInfo } from "@/data/business";
-import { StatCounter } from "@/components/common/StatCounter";
 
 export const metadata: Metadata = {
   title: "About Our Nursery & Team",

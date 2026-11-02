@@ -31,12 +31,6 @@ export function Footer() {
             <p className="text-paper/75 text-sm sm:text-base leading-relaxed max-w-sm">
               Established in 2018–2019, Shree Ganesh Nursery & Farm is Ahmedabad’s complete destination for healthy nursery plants, bespoke landscaping, flexible plant rentals, and reliable garden maintenance.
             </p>
-
-            <div className="pt-2">
-              <span className="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider text-sage-light bg-forest/80 rounded-full border border-sage/20">
-                10-Person Dedicated In-House Team
-              </span>
-            </div>
           </div>
 
           {/* Col 2: Navigation (2 cols) */}
@@ -161,3 +155,4 @@ export function Footer() {
     </footer>
   );
 }
+

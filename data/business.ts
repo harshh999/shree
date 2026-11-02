@@ -50,7 +50,7 @@ export const businessInfo: BusinessInfo = {
   name: "Shree Ganesh Nursery & Farm",
   tagline: "Bring nature closer to home.",
   established: "2018–2019",
-  founder: "Mahinder Singh",
+  founder: "Mahendra Singh",
   teamSize: 10,
   customersServed: "1,000+",
   locationsCount: 1,
@@ -104,3 +104,4 @@ export const businessInfo: BusinessInfo = {
     "Active project execution in Ahmedabad with capabilities extending beyond Gujarat.",
   ],
 };
+

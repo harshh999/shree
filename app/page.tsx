@@ -4,7 +4,7 @@ import { PlantCategories } from "@/components/home/PlantCategories";
 import { ServicesPreview } from "@/components/home/ServicesPreview";
 import { PlantRental } from "@/components/home/PlantRental";
 import { WhyChooseUs } from "@/components/home/WhyChooseUs";
-import { BusinessStats } from "@/components/home/BusinessStats";
+import { FounderSection } from "@/components/home/FounderSection";
 import { FinalCTA } from "@/components/home/FinalCTA";
 
 export default function HomePage() {
@@ -16,7 +16,7 @@ export default function HomePage() {
       <ServicesPreview />
       <PlantRental />
       <WhyChooseUs />
-      <BusinessStats />
+      <FounderSection />
       <FinalCTA />
     </>
   );

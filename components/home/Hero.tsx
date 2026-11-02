@@ -57,6 +57,7 @@ export function Hero() {
 
   return (
     <section
+      id="hero"
       ref={containerRef}
       className="relative min-h-[92vh] flex items-end overflow-hidden bg-forest-dark text-paper pt-32 pb-20 md:pb-28"
     >
@@ -86,7 +87,7 @@ export function Hero() {
               Plants · Gardening · Landscaping · Rentals
             </span>
             <span className="hidden sm:inline-block text-xs font-medium text-pale/70 tracking-wider">
-              Bodakdev, Ahmedabad
+              SBR, Ahmedabad
             </span>
           </div>
 
@@ -144,3 +145,4 @@ export function Hero() {
     </section>
   );
 }
+
