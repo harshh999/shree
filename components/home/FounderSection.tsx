@@ -17,7 +17,7 @@ export function FounderSection() {
                 {/* Portrait Frame */}
                 <div className="relative h-[480px] sm:h-[560px] w-full rounded-2xl overflow-hidden shadow-xl border border-borderLight bg-forest">
                   <Image
-                    src="/images/founder/mahendra-singh.jpg"
+                    src="/Homepage/founder.png"
                     alt={`${businessInfo.founder} - Founder of Shree Ganesh Nursery & Farm`}
                     fill
                     sizes="(max-width: 1024px) 100vw, 42vw"
@@ -110,3 +110,4 @@ export function FounderSection() {
     </section>
   );
 }
+

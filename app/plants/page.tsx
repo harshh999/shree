@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { CategoryGrid } from "@/components/plants/CategoryGrid";
 import { ProductCategories } from "@/components/plants/ProductCategories";
-import { SectionHeading } from "@/components/common/SectionHeading";
-import { MessageCircle, Phone, ArrowUpRight } from "lucide-react";
+import { MessageCircle, Phone } from "lucide-react";
 import { businessInfo } from "@/data/business";
 
 export const metadata: Metadata = {

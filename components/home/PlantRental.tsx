@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowUpRight, Check, MessageCircle } from "lucide-react";
-import { ImageReveal } from "@/components/common/ImageReveal";
 import { Reveal } from "@/components/common/Reveal";
 import { buildWhatsAppLink } from "@/lib/utils";
 
@@ -25,10 +25,10 @@ export function PlantRental() {
           <div className="lg:col-span-6 order-2 lg:order-1">
             <Reveal direction="right">
               <div className="relative">
-                <div className="relative h-[440px] sm:h-[540px] w-full rounded-2xl overflow-hidden shadow-xl border border-borderLight">
-                  <ImageReveal
-                    src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=1200&q=85"
-                    alt="Lush curated plant arrangements for rental in stylish modern interior"
+                <div className="relative h-[440px] sm:h-[540px] w-full rounded-2xl overflow-hidden shadow-xl border border-borderLight bg-forest">
+                  <Image
+                    src="/Homepage/rentals.png"
+                    alt="Curated plant rentals and arrangements for corporate events and celebrations"
                     fill
                     className="object-cover"
                     sizes="(max-width: 1024px) 100vw, 50vw"

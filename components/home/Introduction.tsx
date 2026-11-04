@@ -1,8 +1,8 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowUpRight, CheckCircle2 } from "lucide-react";
 import { Reveal } from "@/components/common/Reveal";
-import { ImageReveal } from "@/components/common/ImageReveal";
 import { businessInfo } from "@/data/business";
 
 export function Introduction() {
@@ -72,13 +72,13 @@ export function Introduction() {
             <Reveal direction="left" delay={0.2}>
               <div className="relative">
                 {/* Main Nursery Photo Container */}
-                <div className="relative h-[480px] sm:h-[560px] w-full rounded-2xl overflow-hidden shadow-lg border border-borderLight">
-                  <ImageReveal
-                    src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1200&q=85"
-                    alt="Lush healthy plants nurtured at Shree Ganesh Nursery"
+                <div className="relative h-[480px] sm:h-[560px] w-full rounded-2xl overflow-hidden shadow-lg border border-borderLight bg-forest">
+                  <Image
+                    src="/Homepage/nursery_overview.png"
+                    alt="Shree Ganesh Nursery & Farm greenhouse and plant collection"
                     fill
-                    className="object-cover"
                     sizes="(max-width: 1024px) 100vw, 40vw"
+                    className="object-cover"
                   />
                 </div>
 

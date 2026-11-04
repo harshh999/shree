@@ -58,7 +58,11 @@ export function ImageReveal({
   return (
     <div
       ref={containerRef}
-      className={cn("relative overflow-hidden bg-pale/30 rounded-sm", containerClassName)}
+      className={cn(
+        "relative overflow-hidden bg-pale/30 rounded-sm",
+        fill && "w-full h-full",
+        containerClassName
+      )}
     >
       {fill ? (
         <Image

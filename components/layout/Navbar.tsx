@@ -63,7 +63,7 @@ export function Navbar() {
             aria-label="Shree Ganesh Nursery & Farm Home"
           >
             {/* Desktop Full Logo with smooth cross-fade */}
-            <div className="hidden sm:block relative w-[210px] h-[50px]">
+            <div className="hidden sm:block relative w-[255px] h-[60px]">
               <Image
                 src="/images/brand/logo-full-light.png"
                 alt="Shree Ganesh Nursery & Farm"
@@ -87,8 +87,8 @@ export function Navbar() {
             </div>
 
             {/* Mobile Compact Icon + Text */}
-            <div className="flex sm:hidden items-center gap-2.5">
-              <div className="relative w-9 h-9">
+            <div className="flex sm:hidden items-center gap-3">
+              <div className="relative w-10 h-10">
                 <Image
                   src="/images/brand/logo-icon.png"
                   alt="Shree Ganesh Logo Mark"
@@ -100,7 +100,7 @@ export function Navbar() {
               <div className="flex flex-col text-left">
                 <span
                   className={cn(
-                    "font-serif text-base font-bold leading-tight transition-colors duration-300",
+                    "font-serif text-[17px] font-bold leading-tight transition-colors duration-300",
                     isTransparent ? "text-paper" : "text-forest"
                   )}
                 >
@@ -108,7 +108,7 @@ export function Navbar() {
                 </span>
                 <span
                   className={cn(
-                    "text-[10px] tracking-wider uppercase font-medium transition-colors duration-300",
+                    "text-[11px] tracking-wider uppercase font-medium transition-colors duration-300",
                     isTransparent ? "text-pale/85" : "text-ink-muted"
                   )}
                 >
@@ -120,7 +120,7 @@ export function Navbar() {
 
           {/* Desktop Navigation */}
           <nav
-            className="hidden lg:flex items-center gap-8"
+            className="hidden lg:flex items-center gap-6 xl:gap-8"
             aria-label="Main Navigation"
           >
             {mainNavLinks.map((link) => {

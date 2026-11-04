@@ -7,8 +7,18 @@ import { SectionHeading } from "@/components/common/SectionHeading";
 import { Reveal } from "@/components/common/Reveal";
 
 export function ServicesPreview() {
-  // Show first 4 services on homepage
-  const featuredServices = servicesData.slice(0, 4);
+  // Key services featured on homepage: Landscaping, Residential, Corporate, Maintenance, Rentals, Wholesale
+  const featuredSlugs = [
+    "landscape-design",
+    "residential-gardening",
+    "commercial-landscaping",
+    "garden-maintenance",
+    "plant-rental",
+    "wholesale-supply",
+  ];
+  const featuredServices = servicesData.filter((s) =>
+    featuredSlugs.includes(s.slug)
+  );
 
   return (
     <section className="py-24 md:py-32 bg-forest text-paper relative overflow-hidden">
@@ -29,7 +39,7 @@ export function ServicesPreview() {
         />
 
         {/* Services List / Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {featuredServices.map((service, idx) => (
             <Reveal key={service.id} delay={idx * 0.1}>
               <div className="group relative bg-forest-dark/70 rounded-2xl p-6 sm:p-8 border border-paper/10 hover:border-pale/30 transition-all duration-300 flex flex-col justify-between h-full">

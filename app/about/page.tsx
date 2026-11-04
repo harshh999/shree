@@ -4,7 +4,6 @@ import Image from "next/image";
 import { ArrowUpRight, Check, Users, Award, HeartHandshake, Sparkles, MapPin, Phone } from "lucide-react";
 import { SectionHeading } from "@/components/common/SectionHeading";
 import { Reveal } from "@/components/common/Reveal";
-import { ImageReveal } from "@/components/common/ImageReveal";
 import { businessInfo } from "@/data/business";
 
 export const metadata: Metadata = {
@@ -146,14 +145,24 @@ export default function AboutPage() {
             {/* Story Photo (5 cols) */}
             <div className="lg:col-span-5">
               <Reveal direction="left">
-                <div className="relative h-[480px] sm:h-[540px] w-full rounded-2xl overflow-hidden shadow-xl border border-borderLight bg-forest">
-                  <ImageReveal
-                    src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1200&q=85"
-                    alt="Authentic nursery rows at Shree Ganesh Nursery"
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 1024px) 100vw, 42vw"
-                  />
+                <div className="relative">
+                  <div className="relative h-[480px] sm:h-[540px] w-full rounded-2xl overflow-hidden shadow-xl border border-borderLight bg-forest">
+                    <Image
+                      src="/Homepage/founder.png"
+                      alt={`${businessInfo.founder} - Founder of Shree Ganesh Nursery & Farm`}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 1024px) 100vw, 42vw"
+                    />
+                  </div>
+                  <div className="absolute -bottom-6 -right-4 sm:-right-6 bg-paper/95 backdrop-blur-md p-5 rounded-2xl shadow-xl border border-borderLight max-w-[240px]">
+                    <div className="font-serif text-xl font-bold text-forest leading-tight">
+                      {businessInfo.founder}
+                    </div>
+                    <div className="text-xs text-ink-muted leading-snug mt-1 font-medium">
+                      Founder & Lead Plantsman
+                    </div>
+                  </div>
                 </div>
               </Reveal>
             </div>
@@ -201,6 +210,75 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Nursery Environment & Grounds */}
+      <section className="py-24 md:py-32 bg-paper border-t border-borderLight">
+        <div className="max-w-container mx-auto px-5 sm:px-8">
+          <SectionHeading
+            eyebrow="Our Bodakdev Destination"
+            title={
+              <>
+                A living botanical sanctuary{" "}
+                <span className="italic font-normal">in Ahmedabad.</span>
+              </>
+            }
+            subtitle="Spanning thousands of square feet on Sindhubhavan Road, our nursery houses diverse indoor foliage under climate shade, alongside hardy outdoor landscape stock and artisanal pottery."
+            align="split"
+          />
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+            <Reveal delay={0.1}>
+              <div className="group relative">
+                <div className="relative h-[360px] sm:h-[440px] w-full rounded-2xl overflow-hidden shadow-lg border border-borderLight bg-forest">
+                  <Image
+                    src="/Homepage/nursery_overview.png"
+                    alt="Greenhouse collection and potted plants at Shree Ganesh Nursery"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-700"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
+                </div>
+                <div className="mt-4">
+                  <span className="text-xs font-bold uppercase tracking-wider text-forest block mb-1">
+                    Greenhouse Collection
+                  </span>
+                  <h3 className="font-serif text-xl sm:text-2xl text-ink font-medium">
+                    Acclimatized Nursery Environment
+                  </h3>
+                  <p className="text-ink-muted text-sm mt-1 leading-relaxed">
+                    Carefully nurtured flowering varieties, tropical aroids, and ornamental foliage sheltered under temperature-regulating shade nets.
+                  </p>
+                </div>
+              </div>
+            </Reveal>
+
+            <Reveal delay={0.2}>
+              <div className="group relative">
+                <div className="relative h-[360px] sm:h-[440px] w-full rounded-2xl overflow-hidden shadow-lg border border-borderLight bg-forest">
+                  <Image
+                    src="/Homepage/exterior.png"
+                    alt="Outdoor shaded plant aisles and pottery rows at Shree Ganesh Nursery"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-700"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
+                </div>
+                <div className="mt-4">
+                  <span className="text-xs font-bold uppercase tracking-wider text-forest block mb-1">
+                    Outdoor Nursery Grounds
+                  </span>
+                  <h3 className="font-serif text-xl sm:text-2xl text-ink font-medium">
+                    Sindhubhavan Road Plant Aisles
+                  </h3>
+                  <p className="text-ink-muted text-sm mt-1 leading-relaxed">
+                    Expansive open walkways stocked with sun-ready outdoor shrubs, mature avenue saplings, hanging planters, and handcrafted terracotta.
+                  </p>
+                </div>
+              </div>
+            </Reveal>
+          </div>
+        </div>
+      </section>
+
       {/* Our In-House Team */}
       <section className="py-24 md:py-32 bg-paper/60 border-t border-borderLight">
         <div className="max-w-container mx-auto px-5 sm:px-8">
@@ -209,9 +287,9 @@ export default function AboutPage() {
             <div className="lg:col-span-5 order-2 lg:order-1">
               <Reveal direction="right">
                 <div className="relative h-[440px] sm:h-[500px] w-full rounded-2xl overflow-hidden shadow-lg border border-borderLight bg-forest">
-                  <ImageReveal
-                    src="https://images.unsplash.com/photo-1599685315640-76d2d3e2f5a1?auto=format&fit=crop&w=1200&q=85"
-                    alt="Dedicated plant care team at work"
+                  <Image
+                    src="/Homepage/team.png"
+                    alt="Dedicated plant care specialist tending nursery plants at Shree Ganesh Nursery & Farm"
                     fill
                     className="object-cover"
                     sizes="(max-width: 1024px) 100vw, 42vw"

@@ -32,7 +32,7 @@ export const servicesData: ServiceItem[] = [
       { step: "03", title: "Execution & Handover", desc: "Our in-house crew prepares soil, beds, and plants." },
     ],
     idealFor: "Private residences, new farmhouses, institutional campuses, and renovated villas.",
-    image: "https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&w=1200&q=80",
+    image: "/Homepage/Landscaping.png",
     whatsappMessage: "Hello Shree Ganesh Nursery, I am interested in discussing a Landscape Design & Development project.",
   },
   {
@@ -55,7 +55,7 @@ export const servicesData: ServiceItem[] = [
       { step: "03", title: "Planting & Guidance", desc: "Planting with tailored watering and care routines." },
     ],
     idealFor: "Bungalows, villas, suburban row houses, and penthouse terraces.",
-    image: "https://images.unsplash.com/photo-1598902108854-10e335adac99?auto=format&fit=crop&w=1200&q=80",
+    image: "/Homepage/residential.png",
     whatsappMessage: "Hello Shree Ganesh Nursery, I would like to enquire about Residential Gardening for my home.",
   },
   {
@@ -78,7 +78,7 @@ export const servicesData: ServiceItem[] = [
       { step: "03", title: "Installation & Routine", desc: "Clean setup followed by silent ongoing maintenance." },
     ],
     idealFor: "IT parks, corporate offices, boutique cafes, upscale restaurants, and luxury showrooms.",
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1200&q=80",
+    image: "/Homepage/corporate.png",
     whatsappMessage: "Hello Shree Ganesh Nursery, I would like to discuss Commercial & Corporate Landscaping services.",
   },
   {
@@ -101,7 +101,7 @@ export const servicesData: ServiceItem[] = [
       { step: "03", title: "Installation", desc: "Neat setup with proper drainage containment." },
     ],
     idealFor: "High-rise apartments, rooftop terraces, duplex balconies, and penthouse decks.",
-    image: "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=1200&q=80",
+    image: "/Homepage/terrace.png",
     whatsappMessage: "Hello Shree Ganesh Nursery, I would like to consult on a Terrace or Balcony Garden.",
   },
   {
@@ -124,7 +124,7 @@ export const servicesData: ServiceItem[] = [
       { step: "03", title: "Delivery & Placement", desc: "Full setup before your event, seamless teardown after." },
     ],
     idealFor: "Corporate conferences, wedding venues, photo shoots, trade fairs, and hotel lobbies.",
-    image: "https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=1200&q=80",
+    image: "/Homepage/rentals.png",
     whatsappMessage: "Hello Shree Ganesh Nursery, I want to enquire about your Plant Rental & Arrangement services.",
   },
   {
@@ -147,7 +147,7 @@ export const servicesData: ServiceItem[] = [
       { step: "03", title: "Reliable Visits", desc: "Our trained gardeners execute systematic maintenance." },
     ],
     idealFor: "Private residences, housing societies, corporate offices, and commercial establishments.",
-    image: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1200&q=80",
+    image: "/Homepage/Maintenance.png",
     whatsappMessage: "Hello Shree Ganesh Nursery, I am looking for a reliable Garden Maintenance contract.",
   },
   {
@@ -170,7 +170,7 @@ export const servicesData: ServiceItem[] = [
       { step: "03", title: "Packaging & Dispatch", desc: "Carefully bundled and transported to your site." },
     ],
     idealFor: "Real estate developers, civil contractors, retail plant nurseries, and municipal projects.",
-    image: "https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=1200&q=80",
+    image: "/Homepage/wholesale.png",
     whatsappMessage: "Hello Shree Ganesh Nursery, I would like to request a quote for Wholesale & Bulk Plant Supply.",
   },
   {
@@ -193,7 +193,7 @@ export const servicesData: ServiceItem[] = [
       { step: "03", title: "Mechanized Planting", desc: "Systematic planting with high survival protocols." },
     ],
     idealFor: "Industrial townships, educational institutions, farm communities, and highway corridors.",
-    image: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=1200&q=80",
+    image: "/Homepage/large_scale.png",
     whatsappMessage: "Hello Shree Ganesh Nursery, I would like to enquire about Large-Scale Plantation services.",
   },
 ];

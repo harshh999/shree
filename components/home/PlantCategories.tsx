@@ -7,8 +7,16 @@ import { SectionHeading } from "@/components/common/SectionHeading";
 import { Reveal } from "@/components/common/Reveal";
 
 export function PlantCategories() {
-  // Display 6 principal categories on homepage
-  const featuredCategories = plantCategories.slice(0, 6);
+  // Display 4 featured categories on homepage
+  const featuredNames = [
+    "Indoor Plants",
+    "Flowering Plants",
+    "Palm Plants",
+    "Bonsai & Specialty Plants",
+  ];
+  const featuredCategories = plantCategories.filter((c) =>
+    featuredNames.includes(c.name)
+  );
 
   return (
     <section className="py-24 md:py-32 bg-paper/60 border-t border-borderLight">
@@ -26,7 +34,7 @@ export function PlantCategories() {
         />
 
         {/* Categories Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           {featuredCategories.map((category, index) => (
             <Reveal key={category.name} delay={index * 0.1}>
               <Link

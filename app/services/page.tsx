@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { MessageCircle, Phone, ArrowUpRight, ShieldCheck, Users, Truck } from "lucide-react";
+import { MessageCircle, ArrowUpRight, ShieldCheck, Users, Truck } from "lucide-react";
 import { ServiceSection } from "@/components/services/ServiceSection";
-import { SectionHeading } from "@/components/common/SectionHeading";
 import { Reveal } from "@/components/common/Reveal";
 import { businessInfo } from "@/data/business";
 

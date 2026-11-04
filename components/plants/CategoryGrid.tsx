@@ -1,10 +1,9 @@
 "use client";
 
 import React, { useState, useMemo } from "react";
-import { Search, X, SlidersHorizontal } from "lucide-react";
-import { curatedPlants, plantCategories, PlantCategory } from "@/data/plants";
+import { Search, X } from "lucide-react";
+import { curatedPlants, plantCategories } from "@/data/plants";
 import { PlantCard } from "./PlantCard";
-import { Reveal } from "@/components/common/Reveal";
 
 interface CategoryGridProps {
   initialCategory?: string;

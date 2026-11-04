@@ -24,7 +24,7 @@ export function Hero() {
 
       tl.fromTo(
         imageRef.current,
-        { scale: 1.15, opacity: 0.6 },
+        { scale: 1.12, opacity: 0.6, transformOrigin: "center top" },
         { scale: 1, opacity: 1, duration: 1.6 }
       )
         .fromTo(
@@ -59,18 +59,19 @@ export function Hero() {
     <section
       id="hero"
       ref={containerRef}
-      className="relative min-h-[92vh] flex items-end overflow-hidden bg-forest-dark text-paper pt-32 pb-20 md:pb-28"
+      className="relative min-h-screen min-h-[100svh] flex items-end overflow-hidden bg-forest-dark text-paper pt-28 sm:pt-32 pb-16 sm:pb-20 md:pb-28"
     >
       {/* Background Hero Image with Organic Overlay */}
       <div className="absolute inset-0 z-0">
         <Image
           ref={imageRef}
-          src="https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=2000&q=85"
-          alt="Lush green botanical plants at Shree Ganesh Nursery"
+          src="/Homepage/new_hero.png"
+          alt="Shree Ganesh Nursery & Farm entrance on Sindhubhavan Road, Bodakdev, Ahmedabad"
           fill
           priority
           sizes="100vw"
-          className="object-cover object-center"
+          className="object-cover object-[60%_top] md:object-[55%_4%] lg:object-[58%_8%]"
+          style={{ transformOrigin: "center top" }}
         />
         {/* Editorial Gradients for Deep Botanical Mood & Readability */}
         <div className="absolute inset-0 bg-gradient-to-t from-forest-deep via-forest-deep/75 to-transparent opacity-95" />
