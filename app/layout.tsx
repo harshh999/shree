@@ -3,6 +3,7 @@ import { DM_Sans, DM_Serif_Display } from "next/font/google";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { LocalBusinessJsonLd } from "@/components/common/JsonLd";
+import { FloatingChatAssistant } from "@/components/common/FloatingChatAssistant";
 import "./globals.css";
 
 const dmSans = DM_Sans({
@@ -91,6 +92,7 @@ export default function RootLayout({
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
+        <FloatingChatAssistant />
       </body>
     </html>
   );
